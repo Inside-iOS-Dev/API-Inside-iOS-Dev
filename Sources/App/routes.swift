@@ -20,4 +20,7 @@ public func routes(_ router: Router) throws {
     
     let postsController = PostsController()
     router.get("posts", use: postsController.index)
+    
+    let expensesController = ExpensesController()
+    router.get("expenses", use: expensesController.index)
 }
